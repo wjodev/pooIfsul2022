@@ -1,8 +1,19 @@
 package model;
 public class Conta {
     private int codigo;
-    private String correntista;
+    private Pessoa correntista;
     private float saldo;
+    
+    
+    public Conta() {
+    	
+    }
+    
+    public Conta (Pessoa correntista, int codigo, float saldo) {
+    	this.correntista = correntista;
+    	this.codigo = codigo;
+    	this.saldo  = saldo;
+    }
     
     
 	public int getCodigo() {
@@ -11,10 +22,10 @@ public class Conta {
 	public void setCodigo(int codigo) {
 		this.codigo = codigo;
 	}
-	public String getCorrentista() {
+	public Pessoa getCorrentista() {
 		return correntista;
 	}
-	public void setCorrentista(String correntista) {
+	public void setCorrentista(Pessoa correntista) {
 		this.correntista = correntista;
 	}
 	public float getSaldo() {

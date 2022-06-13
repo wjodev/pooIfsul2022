@@ -3,8 +3,18 @@ public class Pessoa {
     private String nome;
     private int idade;
     private long celular;
-    private String nomeMae;
+    private Endereco endereco;
     
+    public Pessoa() {
+    	
+    }
+    
+    public Pessoa(String nome, int idade, long celular, Endereco endereco) {
+    	this.nome = nome;
+    	this.idade = idade;
+    	this.celular = celular;
+    	this.endereco = endereco;
+    }
     
 	public String getNome() {
 		return nome;
@@ -24,11 +34,13 @@ public class Pessoa {
 	public void setCelular(long celular) {
 		this.celular = celular;
 	}
-	public String getNomeMae() {
-		return nomeMae;
+	public Endereco getEndereco() {
+		return endereco;
 	}
-	public void setNomeMae(String nomeMae) {
-		this.nomeMae = nomeMae;
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}
+    
+    
     
 }
