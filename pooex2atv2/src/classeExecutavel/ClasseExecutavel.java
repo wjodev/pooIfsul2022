@@ -17,6 +17,8 @@ public class ClasseExecutavel {
 		f1.nomeCompleto(args);
 		System.out.println(f1.calcularSalario());
 		System.out.println(f1.incrementarHoras(horas)); 
+		
+		
 
 	}
 
